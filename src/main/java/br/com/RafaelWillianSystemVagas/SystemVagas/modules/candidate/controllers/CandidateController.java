@@ -8,10 +8,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/candidate")
 public class CandidateController {
 
-    @GetMapping("/error")
-    public String error(){
-        return "Error na pagina";
-    }
 
     @PostMapping("/")
     public void create(@Valid @RequestBody CandidateEntity candidate){
