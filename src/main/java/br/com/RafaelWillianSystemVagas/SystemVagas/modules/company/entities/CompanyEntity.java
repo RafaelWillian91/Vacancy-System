@@ -1,45 +1,37 @@
-package br.com.RafaelWillianSystemVagas.SystemVagas.modules.candidate;
+package br.com.RafaelWillianSystemVagas.SystemVagas.modules.company.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.validator.constraints.Length;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Entity(name = "company")
 @Data
-@Entity(name = "candidate")
-public class CandidateEntity {
+public class CompanyEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-
     private String name;
-
     @NotBlank
-    @Pattern(regexp = "^(?!\\s*$).+", message = "O campo [userName] não deve conter espaço!")
+    @Pattern(regexp = "^(?!\\s*$).+", message = "O campo não pode ser branco")
     private String userName;
-
-    @Email(message = "O campo e-mail está inválido!!")
-    private String email;
-
     @Length(min = 10, max = 100)
     private String password;
-
+    private String webSite;
+    @Email(message = "O campo e-email está inválido")
+    private String email;
     private String description;
 
-    private String curriculum;
-
     @CreationTimestamp
-    @Column(name = "creationDate")
-    private LocalDateTime createAt;
+    @Column(name = "CreationDateTime")
+    private LocalDateTime localDateTime;
 
 
 }
