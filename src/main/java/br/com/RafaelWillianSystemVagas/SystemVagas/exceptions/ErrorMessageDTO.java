@@ -1,4 +1,4 @@
-package br.com.RafaelWillianSystemVagas.SystemVagas.exception;
+package br.com.RafaelWillianSystemVagas.SystemVagas.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

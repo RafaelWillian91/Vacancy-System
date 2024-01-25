@@ -22,7 +22,7 @@ public class CompanyEntity {
     @NotBlank
     @Pattern(regexp = "^(?!\\s*$).+", message = "O campo não pode ser branco")
     private String userName;
-    @Length(min = 10, max = 100)
+    @Length(min = 10, max = 100, message = "a senha deve ter entre 10 e 100 caracteres")
     private String password;
     private String webSite;
     @Email(message = "O campo e-email está inválido")

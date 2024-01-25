@@ -1,8 +1,8 @@
 package br.com.RafaelWillianSystemVagas.SystemVagas.modules.candidate.useCases;
 
-import br.com.RafaelWillianSystemVagas.SystemVagas.exception.ErrorExist;
-import br.com.RafaelWillianSystemVagas.SystemVagas.modules.candidate.CandidateEntity;
-import br.com.RafaelWillianSystemVagas.SystemVagas.modules.candidate.CandidateRepository;
+import br.com.RafaelWillianSystemVagas.SystemVagas.exceptions.ErrorExist;
+import br.com.RafaelWillianSystemVagas.SystemVagas.modules.candidate.entities.CandidateEntity;
+import br.com.RafaelWillianSystemVagas.SystemVagas.modules.candidate.repositories.CandidateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

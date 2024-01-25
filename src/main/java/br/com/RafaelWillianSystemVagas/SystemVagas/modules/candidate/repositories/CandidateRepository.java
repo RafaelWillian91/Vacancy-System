@@ -1,5 +1,6 @@
-package br.com.RafaelWillianSystemVagas.SystemVagas.modules.candidate;
+package br.com.RafaelWillianSystemVagas.SystemVagas.modules.candidate.repositories;
 
+import br.com.RafaelWillianSystemVagas.SystemVagas.modules.candidate.entities.CandidateEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

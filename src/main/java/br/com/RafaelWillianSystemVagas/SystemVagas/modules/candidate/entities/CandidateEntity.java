@@ -1,4 +1,4 @@
-package br.com.RafaelWillianSystemVagas.SystemVagas.modules.candidate;
+package br.com.RafaelWillianSystemVagas.SystemVagas.modules.candidate.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
